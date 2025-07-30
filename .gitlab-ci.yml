@@ -1,0 +1,9 @@
+stages:
+  - test
+
+test_nginx:
+  stage: test
+  script:
+    - which nginx && nginx -v
+  tags:
+    - your-runner-tag  # замените на тег вашего GitLab-раннера, если нужно
